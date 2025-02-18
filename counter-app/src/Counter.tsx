@@ -4,12 +4,15 @@ function Counter() {
   return (
     <>
       <h1>Count ={count}</h1>
-      <button className="btn btn-outline-danger" onClick={() => setCount(count + 1)}>
+      <button
+        onClick={() => setCount(count + 1)}
+        className="btn btn-outline-danger"
+      >
         Increase
       </button>
       <button
-        className="btn btn-outline-primary"
         onClick={() => setCount(count - 1)}
+        className="btn btn-outline-primary"
       >
         Decrease
       </button>
